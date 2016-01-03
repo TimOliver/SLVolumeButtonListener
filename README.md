@@ -8,7 +8,7 @@ It was originally created for [SnappyCam](http://thetechreviewer.com/software/sn
 
 When [SnappyLabs was acquired by Apple](http://techcrunch.com/2014/01/04/snappylabs/), the SnappyLabs GitHub account was deactivated, and this class was removed along with it. 
 
-Before the account was deactivated, I downloaded this class as I was interested in implementing a feature in [iComics](http://icomics.co) that used the same mechanism, and I've had it kicking around my hard drive ever since.
+I had downloaded this class before the account was deactivated as I was interested in implementing a similar mechanism in [iComics](http://icomics.co) to enable the ability to turn comic book pages with the volume buttons. I since discovered this would have resulted in iComics being rejected from the App Store, so while I abandoned the feature, I still had this class kicking around my hard drive.
 
 In order to preserve this class in the hopes it still has educational value, I've made it available on GitHub again under my own account.
 
