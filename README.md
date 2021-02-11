@@ -12,3 +12,26 @@ I had downloaded this class before the account was deactivated as I was interest
 
 In order to preserve this class in the hopes it still has educational value, I've made it available on GitHub again under my own account.
 
+The original README follows:
+
+---
+
+# Overview #
+
+This repository contains an Objective C class to listen for volume button events on iOS.
+
+Three events are supported, for each of the two hardware buttons (+ Volume up, - Volume down):
+
+1. Volume button press has begun
+2. Volume button was pressed (can repeat while the button is held down)
+3. Volume button press has ended
+
+A sample Xcode project is included demonstrating the use of the library.
+
+# License #
+
+The source in this repository is distributed under the terms of the GNU General 
+Public License.
+
+A separate license suitable for commercial use is available on request.
+For further information, please contact licensing@snappylabs.com.

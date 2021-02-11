@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F8AEA0515112C84008AE80E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8AEA0415112C84008AE80E /* UIKit.framework */; };
+		6F8AEA0715112C84008AE80E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8AEA0615112C84008AE80E /* Foundation.framework */; };
+		6F8AEA0915112C84008AE80E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8AEA0815112C84008AE80E /* CoreGraphics.framework */; };
+		6F8AEA0F15112C84008AE80E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F8AEA0D15112C84008AE80E /* InfoPlist.strings */; };
+		6F8AEA1115112C84008AE80E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8AEA1015112C84008AE80E /* main.m */; };
+		6F8AEA1515112C84008AE80E /* SLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8AEA1415112C84008AE80E /* SLAppDelegate.m */; };
+		6F8AEA1815112C84008AE80E /* SLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8AEA1715112C84008AE80E /* SLViewController.m */; };
+		6F8AEA1B15112C84008AE80E /* SLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F8AEA1915112C84008AE80E /* SLViewController.xib */; };
+		6F8AEA2215112C90008AE80E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8AEA2115112C90008AE80E /* MediaPlayer.framework */; };
+		6F8AEA2415112C95008AE80E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8AEA2315112C95008AE80E /* AudioToolbox.framework */; };
+		6F8AEA2F15112ED7008AE80E /* VolumeDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F8AEA2715112ED6008AE80E /* VolumeDown.png */; };
+		6F8AEA3015112ED7008AE80E /* VolumeDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F8AEA2815112ED6008AE80E /* VolumeDown@2x.png */; };
+		6F8AEA3115112ED7008AE80E /* VolumeDownGlow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F8AEA2915112ED7008AE80E /* VolumeDownGlow.png */; };
+		6F8AEA3215112ED7008AE80E /* VolumeDownGlow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F8AEA2A15112ED7008AE80E /* VolumeDownGlow@2x.png */; };
+		6F8AEA3315112ED7008AE80E /* VolumeUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F8AEA2B15112ED7008AE80E /* VolumeUp.png */; };
+		6F8AEA3415112ED7008AE80E /* VolumeUp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F8AEA2C15112ED7008AE80E /* VolumeUp@2x.png */; };
+		6F8AEA3515112ED7008AE80E /* VolumeUpGlow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F8AEA2D15112ED7008AE80E /* VolumeUpGlow.png */; };
+		6F8AEA3615112ED7008AE80E /* VolumeUpGlow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F8AEA2E15112ED7008AE80E /* VolumeUpGlow@2x.png */; };
+		6F8AEA3A15113024008AE80E /* SLVolumeButtonListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8AEA3915113024008AE80E /* SLVolumeButtonListener.m */; };
+		6F8AEA3D15113B5F008AE80E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F8AEA3B15113B5E008AE80E /* Icon.png */; };
+		6F8AEA3E15113B5F008AE80E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F8AEA3C15113B5E008AE80E /* Icon@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6F8AEA0015112C84008AE80E /* VolumeTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolumeTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F8AEA0415112C84008AE80E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6F8AEA0615112C84008AE80E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6F8AEA0815112C84008AE80E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6F8AEA0C15112C84008AE80E /* VolumeTester-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VolumeTester-Info.plist"; sourceTree = "<group>"; };
+		6F8AEA0E15112C84008AE80E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6F8AEA1015112C84008AE80E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6F8AEA1215112C84008AE80E /* VolumeTester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VolumeTester-Prefix.pch"; sourceTree = "<group>"; };
+		6F8AEA1315112C84008AE80E /* SLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLAppDelegate.h; sourceTree = "<group>"; };
+		6F8AEA1415112C84008AE80E /* SLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLAppDelegate.m; sourceTree = "<group>"; };
+		6F8AEA1615112C84008AE80E /* SLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLViewController.h; sourceTree = "<group>"; };
+		6F8AEA1715112C84008AE80E /* SLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLViewController.m; sourceTree = "<group>"; };
+		6F8AEA1A15112C84008AE80E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SLViewController.xib; sourceTree = "<group>"; };
+		6F8AEA2115112C90008AE80E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		6F8AEA2315112C95008AE80E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6F8AEA2715112ED6008AE80E /* VolumeDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VolumeDown.png; path = Artwork/VolumeDown.png; sourceTree = "<group>"; };
+		6F8AEA2815112ED6008AE80E /* VolumeDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VolumeDown@2x.png"; path = "Artwork/VolumeDown@2x.png"; sourceTree = "<group>"; };
+		6F8AEA2915112ED7008AE80E /* VolumeDownGlow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VolumeDownGlow.png; path = Artwork/VolumeDownGlow.png; sourceTree = "<group>"; };
+		6F8AEA2A15112ED7008AE80E /* VolumeDownGlow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VolumeDownGlow@2x.png"; path = "Artwork/VolumeDownGlow@2x.png"; sourceTree = "<group>"; };
+		6F8AEA2B15112ED7008AE80E /* VolumeUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VolumeUp.png; path = Artwork/VolumeUp.png; sourceTree = "<group>"; };
+		6F8AEA2C15112ED7008AE80E /* VolumeUp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VolumeUp@2x.png"; path = "Artwork/VolumeUp@2x.png"; sourceTree = "<group>"; };
+		6F8AEA2D15112ED7008AE80E /* VolumeUpGlow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VolumeUpGlow.png; path = Artwork/VolumeUpGlow.png; sourceTree = "<group>"; };
+		6F8AEA2E15112ED7008AE80E /* VolumeUpGlow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VolumeUpGlow@2x.png"; path = "Artwork/VolumeUpGlow@2x.png"; sourceTree = "<group>"; };
+		6F8AEA3815113024008AE80E /* SLVolumeButtonListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SLVolumeButtonListener.h; path = ../../SLVolumeButtonListener.h; sourceTree = "<group>"; };
+		6F8AEA3915113024008AE80E /* SLVolumeButtonListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SLVolumeButtonListener.m; path = ../../SLVolumeButtonListener.m; sourceTree = "<group>"; };
+		6F8AEA3B15113B5E008AE80E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Artwork/Icon.png; sourceTree = "<group>"; };
+		6F8AEA3C15113B5E008AE80E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Artwork/Icon@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F8AE9FD15112C84008AE80E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F8AEA2415112C95008AE80E /* AudioToolbox.framework in Frameworks */,
+				6F8AEA2215112C90008AE80E /* MediaPlayer.framework in Frameworks */,
+				6F8AEA0515112C84008AE80E /* UIKit.framework in Frameworks */,
+				6F8AEA0715112C84008AE80E /* Foundation.framework in Frameworks */,
+				6F8AEA0915112C84008AE80E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F8AE9F515112C84008AE80E = {
+			isa = PBXGroup;
+			children = (
+				6F8AEA0A15112C84008AE80E /* VolumeTester */,
+				6F8AEA0315112C84008AE80E /* Frameworks */,
+				6F8AEA0115112C84008AE80E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F8AEA0115112C84008AE80E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F8AEA0015112C84008AE80E /* VolumeTester.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F8AEA0315112C84008AE80E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F8AEA2315112C95008AE80E /* AudioToolbox.framework */,
+				6F8AEA2115112C90008AE80E /* MediaPlayer.framework */,
+				6F8AEA0415112C84008AE80E /* UIKit.framework */,
+				6F8AEA0615112C84008AE80E /* Foundation.framework */,
+				6F8AEA0815112C84008AE80E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F8AEA0A15112C84008AE80E /* VolumeTester */ = {
+			isa = PBXGroup;
+			children = (
+				6F8AEA3715112EDD008AE80E /* Artwork */,
+				6F8AEA1315112C84008AE80E /* SLAppDelegate.h */,
+				6F8AEA1415112C84008AE80E /* SLAppDelegate.m */,
+				6F8AEA1615112C84008AE80E /* SLViewController.h */,
+				6F8AEA1715112C84008AE80E /* SLViewController.m */,
+				6F8AEA1915112C84008AE80E /* SLViewController.xib */,
+				6F8AEA3815113024008AE80E /* SLVolumeButtonListener.h */,
+				6F8AEA3915113024008AE80E /* SLVolumeButtonListener.m */,
+				6F8AEA0B15112C84008AE80E /* Supporting Files */,
+			);
+			path = VolumeTester;
+			sourceTree = "<group>";
+		};
+		6F8AEA0B15112C84008AE80E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F8AEA0C15112C84008AE80E /* VolumeTester-Info.plist */,
+				6F8AEA0D15112C84008AE80E /* InfoPlist.strings */,
+				6F8AEA1015112C84008AE80E /* main.m */,
+				6F8AEA1215112C84008AE80E /* VolumeTester-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F8AEA3715112EDD008AE80E /* Artwork */ = {
+			isa = PBXGroup;
+			children = (
+				6F8AEA3B15113B5E008AE80E /* Icon.png */,
+				6F8AEA3C15113B5E008AE80E /* Icon@2x.png */,
+				6F8AEA2715112ED6008AE80E /* VolumeDown.png */,
+				6F8AEA2815112ED6008AE80E /* VolumeDown@2x.png */,
+				6F8AEA2915112ED7008AE80E /* VolumeDownGlow.png */,
+				6F8AEA2A15112ED7008AE80E /* VolumeDownGlow@2x.png */,
+				6F8AEA2B15112ED7008AE80E /* VolumeUp.png */,
+				6F8AEA2C15112ED7008AE80E /* VolumeUp@2x.png */,
+				6F8AEA2D15112ED7008AE80E /* VolumeUpGlow.png */,
+				6F8AEA2E15112ED7008AE80E /* VolumeUpGlow@2x.png */,
+			);
+			name = Artwork;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F8AE9FF15112C84008AE80E /* VolumeTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F8AEA1E15112C84008AE80E /* Build configuration list for PBXNativeTarget "VolumeTester" */;
+			buildPhases = (
+				6F8AE9FC15112C84008AE80E /* Sources */,
+				6F8AE9FD15112C84008AE80E /* Frameworks */,
+				6F8AE9FE15112C84008AE80E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VolumeTester;
+			productName = VolumeTester;
+			productReference = 6F8AEA0015112C84008AE80E /* VolumeTester.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F8AE9F715112C84008AE80E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SL;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = SnappyLabs;
+			};
+			buildConfigurationList = 6F8AE9FA15112C84008AE80E /* Build configuration list for PBXProject "VolumeTester" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6F8AE9F515112C84008AE80E;
+			productRefGroup = 6F8AEA0115112C84008AE80E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F8AE9FF15112C84008AE80E /* VolumeTester */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F8AE9FE15112C84008AE80E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F8AEA0F15112C84008AE80E /* InfoPlist.strings in Resources */,
+				6F8AEA1B15112C84008AE80E /* SLViewController.xib in Resources */,
+				6F8AEA2F15112ED7008AE80E /* VolumeDown.png in Resources */,
+				6F8AEA3015112ED7008AE80E /* VolumeDown@2x.png in Resources */,
+				6F8AEA3115112ED7008AE80E /* VolumeDownGlow.png in Resources */,
+				6F8AEA3215112ED7008AE80E /* VolumeDownGlow@2x.png in Resources */,
+				6F8AEA3315112ED7008AE80E /* VolumeUp.png in Resources */,
+				6F8AEA3415112ED7008AE80E /* VolumeUp@2x.png in Resources */,
+				6F8AEA3515112ED7008AE80E /* VolumeUpGlow.png in Resources */,
+				6F8AEA3615112ED7008AE80E /* VolumeUpGlow@2x.png in Resources */,
+				6F8AEA3D15113B5F008AE80E /* Icon.png in Resources */,
+				6F8AEA3E15113B5F008AE80E /* Icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F8AE9FC15112C84008AE80E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F8AEA1115112C84008AE80E /* main.m in Sources */,
+				6F8AEA1515112C84008AE80E /* SLAppDelegate.m in Sources */,
+				6F8AEA1815112C84008AE80E /* SLViewController.m in Sources */,
+				6F8AEA3A15113024008AE80E /* SLVolumeButtonListener.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6F8AEA0D15112C84008AE80E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F8AEA0E15112C84008AE80E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6F8AEA1915112C84008AE80E /* SLViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F8AEA1A15112C84008AE80E /* en */,
+			);
+			name = SLViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F8AEA1C15112C84008AE80E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6F8AEA1D15112C84008AE80E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F8AEA1F15112C84008AE80E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VolumeTester/VolumeTester-Prefix.pch";
+				INFOPLIST_FILE = "VolumeTester/VolumeTester-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6F8AEA2015112C84008AE80E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VolumeTester/VolumeTester-Prefix.pch";
+				INFOPLIST_FILE = "VolumeTester/VolumeTester-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F8AE9FA15112C84008AE80E /* Build configuration list for PBXProject "VolumeTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F8AEA1C15112C84008AE80E /* Debug */,
+				6F8AEA1D15112C84008AE80E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F8AEA1E15112C84008AE80E /* Build configuration list for PBXNativeTarget "VolumeTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F8AEA1F15112C84008AE80E /* Debug */,
+				6F8AEA2015112C84008AE80E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F8AE9F715112C84008AE80E /* Project object */;
+}
