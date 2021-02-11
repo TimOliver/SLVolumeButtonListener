@@ -116,6 +116,11 @@ typedef enum SLVolumeButtonState {
 // Enable/disable the listener.  Default is NO (disabled).
 @property (nonatomic, assign) BOOL enabled;
 
+/* Call this in the application 'didFinishLaunching' app delegate method
+ * to prepare the app for receiving audio events.
+ */
++ (void)setupAudioSession;
+
 /* Designated initializer.  You must specify a UIView that is part of the
  * view hierarchy for the whole thing to work.  The only sub-view that is
  * added will have a zero width/height and therefore will not be visible.

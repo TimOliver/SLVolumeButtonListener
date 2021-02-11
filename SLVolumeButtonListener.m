@@ -122,13 +122,14 @@ void SLVolumeButtonListenerCallback(
         const CGRect frame = CGRectZero;
         _containerView = [[UIView alloc] initWithFrame:frame];
         _containerView.autoresizesSubviews = NO;
+        _containerView.clipsToBounds = YES;
 
-        // We create the volume view with zero width/height too, and don't
-        // care if it resizes itself (which it doesn't appear to).
+        // We need to create the button view with a non-zero CGSize
+        // or else it doesn't register with the system
         _volumeView = [[MPVolumeView alloc] initWithFrame:CGRectMake(0, 0, 1, 1)];
-        [_containerView addSubview:_volumeView];
+        [_containerView insertSubview:_volumeView atIndex:0];
 
-        [view addSubview:_containerView];
+        [view insertSubview:_containerView atIndex:0];
         
         // Use this to programatically change the system volume
         _musicPlayer =
@@ -157,12 +158,32 @@ void SLVolumeButtonListenerCallback(
         // Get notified of application backgrounding
         [notifyCenter addObserver:self 
                          selector:@selector(_applicationDidEnterBackground:) 
-                             name:UIApplicationDidEnterBackgroundNotification
+                             name:UIApplicationWillResignActiveNotification
                            object:nil];
     }
     return self;
 }
 
++ (void)setupAudioSession
+{
+    OSStatus error;
+    error = AudioSessionInitialize(NULL, NULL, NULL, NULL);
+    if (error == noErr) {
+        
+        // Set the audio cateogry
+        const UInt32 category = kAudioSessionCategory_AmbientSound;
+        error = AudioSessionSetProperty(
+                                        kAudioSessionProperty_AudioCategory,
+                                        sizeof(category), &category
+                                        );
+        if (error != noErr) {
+            NSLog(@"Failed to configure audio category.");
+        }
+    }
+    else {
+        NSLog(@"Failed to initialize audio session.");
+    }
+}
 
 //-----------------------------------------------------------------------------
 - (void)dealloc {
@@ -243,7 +264,7 @@ void SLVolumeButtonListenerCallback(
         // Ignore
         return;
     }
-        
+    
     if (_enabled) {
 
         // Prepare to be disabled
@@ -261,6 +282,7 @@ void SLVolumeButtonListenerCallback(
         dispatch_async(dispatch_get_main_queue(), ^{
             dispatch_async(dispatch_get_main_queue(), ^{
                 _volumeView.hidden = YES;
+                AudioSessionSetActive(NO);
             });
         });
     }
@@ -282,6 +304,7 @@ void SLVolumeButtonListenerCallback(
         dispatch_async(dispatch_get_main_queue(), ^{
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.volume = _musicPlayer.volume;
+                AudioSessionSetActive(YES);
             });
         });
     }
@@ -400,10 +423,18 @@ void SLVolumeButtonListenerCallback(
 //-----------------------------------------------------------------------------
 - (void)_applicationDidBecomeActive:(NSNotification*)notification {
 
+
+    
     // Reset audio session on resume
     #ifdef SL_ALWAYS_RESTORE_AUDIOSESSION
 
-        AudioSessionSetActive(true);
+    //reset the volume in case the user switched it while backgrounded
+    dispatch_async(dispatch_get_main_queue(), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.volume = _musicPlayer.volume;
+            AudioSessionSetActive(YES);
+        });
+    });
     
     #else
 
